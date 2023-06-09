@@ -43,12 +43,12 @@ const addStar = () => {
 
 Array(1000).fill().forEach(addStar)
 
-const spaceTexture = new Three.TextureLoader().load('milkyway.jpg')
+const spaceTexture = new Three.TextureLoader().load('public/milkyway.jpg')
 scene.background = spaceTexture
 
-const moonTexture = new Three.TextureLoader().load('moon.png')
-const moonNormal = new Three.TextureLoader().load('moonNormal.png')
-const moonBump = new Three.TextureLoader().load('moonHeight.png')
+const moonTexture = new Three.TextureLoader().load('public/moon.png')
+const moonNormal = new Three.TextureLoader().load('public/moonNormal.png')
+const moonBump = new Three.TextureLoader().load('public/moonHeight.png')
 const moon = new Three.Mesh(
   new Three.SphereGeometry(3, 32, 32),
   new Three.MeshStandardMaterial({
