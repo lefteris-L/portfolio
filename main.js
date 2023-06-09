@@ -32,16 +32,16 @@ scene.add(pointLight, ambientLight)
 const controls = new OrbitControls(camera, renderer.domElement)
 
 const addStar = () => {
-  const geometry = new Three.SphereGeometry(0.25, 24, 24)
-  const material = new Three.MeshStandardMaterial({color: 0xffffff})
+  const geometry = new Three.SphereGeometry(0.2, 24, 24)
+  const material = new Three.MeshStandardMaterial()
   const star = new Three.Mesh(geometry, material)
-  const position = Array(3).fill().map(() => Three.MathUtils.randFloatSpread(500))
+  const position = Array(3).fill().map(() => Three.MathUtils.randFloatSpread(350))
 
   star.position.set(...position)
   scene.add(star)
 }
 
-Array(1000).fill().forEach(addStar)
+Array(500).fill().forEach(addStar)
 
 const spaceTexture = new Three.TextureLoader().load('milkyway.jpg')
 scene.background = spaceTexture
@@ -49,6 +49,7 @@ scene.background = spaceTexture
 const moonTexture = new Three.TextureLoader().load('moon.png')
 const moonNormal = new Three.TextureLoader().load('moonNormal.png')
 const moonBump = new Three.TextureLoader().load('moonHeight.png')
+
 const moon = new Three.Mesh(
   new Three.SphereGeometry(3, 32, 32),
   new Three.MeshStandardMaterial({
