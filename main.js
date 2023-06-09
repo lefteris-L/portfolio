@@ -1,28 +1,24 @@
 import './style.css'
-import * as Three from 'three'
+import * as THREE from 'three'
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
 
-const scene = new Three.Scene()
-const camera = new Three.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-const renderer = new Three.WebGL1Renderer({
+const scene = new THREE.Scene()
+const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000)
+const renderer = new THREE.WebGL1Renderer({
   canvas: document.querySelector('#bg')
 })
+
+const loader = new THREE.TextureLoader()
 
 renderer.setPixelRatio(window.devicePixelRatio)
 renderer.setSize(window.innerWidth, window.innerHeight)
 camera.position.setZ(30)
 renderer.render(scene, camera)
 
-// const geometry = new Three.TorusGeometry(10, 3, 16 , 100)
-// const material = new Three.MeshStandardMaterial({color: 0x000000})
-// const torus = new Three.Mesh(geometry, material)
-
-// scene.add(torus)
-
-const pointLight = new Three.PointLight(0xffffff)
+const pointLight = new THREE.DirectionalLight(0xffffff)
 pointLight.position.set(-50, 50, 50)
 
-const ambientLight = new Three.AmbientLight(0x999999)
+const ambientLight = new THREE.AmbientLight(0x999999)
 scene.add(pointLight, ambientLight)
 
 // const lightHelper = new Three.PointLightHelper(pointLight)
@@ -31,37 +27,42 @@ scene.add(pointLight, ambientLight)
 
 const controls = new OrbitControls(camera, renderer.domElement)
 
-const addStar = () => {
-  const geometry = new Three.SphereGeometry(0.2, 24, 24)
-  const material = new Three.MeshStandardMaterial()
-  const star = new Three.Mesh(geometry, material)
-  const position = Array(3).fill().map(() => Three.MathUtils.randFloatSpread(350))
-
-  star.position.set(...position)
-  scene.add(star)
+const starGeo = new THREE.BufferGeometry()
+const positions = []
+const n = 200, n2 = n / 2
+for (let i = 0; i < 6000; i++) {
+  positions.push({
+    x: Math.random() * n -n2,
+    y: Math.random() * n -n2,
+    z: Math.random() * n -n2
+  })
 }
+starGeo.setFromPoints(positions);
 
-Array(500).fill().forEach(addStar)
+const stars = new THREE.Points(
+  starGeo,
+  new THREE.PointsMaterial({size: 0.01})
+)
+scene.add(stars)
 
-const spaceTexture = new Three.TextureLoader().load('milkyway.jpg')
+const spaceTexture = loader.load('milkyway.jpg')
 scene.background = spaceTexture
 
-const moonTexture = new Three.TextureLoader().load('moon.png')
-const moonNormal = new Three.TextureLoader().load('moonNormal.png')
-const moonBump = new Three.TextureLoader().load('moonHeight.png')
+const moonTexture = loader.load('moon.png')
+const moonNormal = loader.load('moonNormal.png')
+const moonBump = loader.load('moonHeight.png')
 
-const moon = new Three.Mesh(
-  new Three.SphereGeometry(3, 32, 32),
-  new Three.MeshStandardMaterial({
+const moon = new THREE.Mesh(
+  new THREE.SphereGeometry(3, 32, 32),
+  new THREE.MeshStandardMaterial({
     map: moonTexture,
     normalMap: moonNormal,
     bumpMap: moonBump
   })
 )
-// moon.position.y = 15
 scene.add(moon)
 
-// const boxTexture = new Three.TextureLoader().load('moon.png')
+// const boxTexture = loader.load('moon.png')
 // const box = new Three.Mesh(
 //   new Three.BoxGeometry(3, 3, 3),
 //   new Three.MeshBasicMaterial({map: boxTexture})
