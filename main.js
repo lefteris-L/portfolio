@@ -72,7 +72,7 @@ const createText = () => {
   h1.classList.add('name')
 
   const p = document.createElement('p')
-  p.innerText = 'I create stuff on the Web. I\'ve been playing around with Three.JS and created this website. This is my portfolio'
+  p.innerText = 'I create stuff on the Web. This is my portfolio'
   p.classList.add('text')
   
   const h2 = document.createElement('h2')
@@ -99,13 +99,18 @@ const animate = () => {
     if (moon.position.z < distance) {
       moon.position.z += velocity
       stars.position.z += velocity
+      camera.rotation.y -= 0.001
     } 
     if (moon.position.z > distance) {
       moon.position.z = distance
+      moon.position.x = 0
       stars.position.z = distance
       shouldMove = false
       createText()
     }
+  }
+  if(!shouldMove && camera.rotation.y < 0) {
+    camera.rotateY(0.001)
   }
   // controls.update()
   renderer.render(scene, camera)
