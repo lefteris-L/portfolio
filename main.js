@@ -1,48 +1,51 @@
 import './style.css'
 import * as THREE from 'three'
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
+// import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
 
 const scene = new THREE.Scene()
-const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000)
-const renderer = new THREE.WebGL1Renderer({
+const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1000)
+const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg')
 })
+
 
 const loader = new THREE.TextureLoader()
 
 renderer.setPixelRatio(window.devicePixelRatio)
 renderer.setSize(window.innerWidth, window.innerHeight)
-camera.position.setZ(30)
+camera.position.set(0, 0, 1)
 renderer.render(scene, camera)
 
-const pointLight = new THREE.DirectionalLight(0xffffff)
-pointLight.position.set(-50, 50, 50)
+const directionalLight = new THREE.DirectionalLight(0xffffff)
+directionalLight.position.set(-50, 50, 50)
 
 const ambientLight = new THREE.AmbientLight(0x999999)
-scene.add(pointLight, ambientLight)
+scene.add(directionalLight, ambientLight)
 
-// const lightHelper = new Three.PointLightHelper(pointLight)
+const lightHelper = new THREE.DirectionalLightHelper(directionalLight)
 // const gridHelper = new Three.GridHelper(200, 50)
-// scene.add(lightHelper, gridHelper)
+// scene.add(lightHelper)
 
-const controls = new OrbitControls(camera, renderer.domElement)
+// const controls = new OrbitControls(camera, renderer.domElement)
 
 const starGeo = new THREE.BufferGeometry()
-const positions = []
-const n = 200, n2 = n / 2
+const vertices = []//new Float32Array(18000)
+const n = 2000, n2 = n / 2
 for (let i = 0; i < 6000; i++) {
-  positions.push({
-    x: Math.random() * n -n2,
-    y: Math.random() * n -n2,
-    z: Math.random() * n -n2
-  })
+  const star = new THREE.Vector3(
+    Math.random() * n -n2,
+    Math.random() * n -n2,
+    Math.random() * n -n2
+  )
+  vertices.push(star)
 }
-starGeo.setFromPoints(positions);
+starGeo.setFromPoints(vertices)
 
 const stars = new THREE.Points(
   starGeo,
-  new THREE.PointsMaterial({size: 0.01})
+  new THREE.PointsMaterial({size: 0.07})
 )
+stars.position.z = -1000
 scene.add(stars)
 
 const spaceTexture = loader.load('milkyway.jpg')
@@ -60,25 +63,28 @@ const moon = new THREE.Mesh(
     bumpMap: moonBump
   })
 )
+moon.position.z = -1000
 scene.add(moon)
 
-// const boxTexture = loader.load('moon.png')
-// const box = new Three.Mesh(
-//   new Three.BoxGeometry(3, 3, 3),
-//   new Three.MeshBasicMaterial({map: boxTexture})
-// )
+const createText = () => {
+  const h1 = document.createElement('h1')
+  h1.innerText = 'My name is Lefteris Loizides'
+  h1.classList.add('name')
 
-// scene.add(box)
+  const p = document.createElement('p')
+  p.innerText = 'I create stuff on the Web. I\'ve been playing around with Three.JS and created this website. This is my portfolio'
+  p.classList.add('text')
+  
+  const h2 = document.createElement('h2')
+  h2.innerText = 'Enjoy :)'
+  h2.classList.add('enjoy')
 
-const moveCamera = () => {
-  const {top} = document.body.getBoundingClientRect()
-
-  camera.position.z = top * -0.01
-  camera.position.x = top * -0.0002
-  camera.position.y = top * -0.0002
+  document.querySelector('.box').append(h1, p, h2)
 }
-
-// document.body.onscroll = moveCamera
+let velocity = 0
+let shouldMove = true
+const acc = 0.02
+const distance = -5
 
 const animate = () => {
   requestAnimationFrame(animate)
@@ -87,8 +93,21 @@ const animate = () => {
   moon.rotation.y += 0.00025
   moon.rotation.z += 0.0005
 
-  controls.update()
+  velocity += acc
+  
+  if (shouldMove) {
+    if (moon.position.z < distance) {
+      moon.position.z += velocity
+      stars.position.z += velocity
+    } 
+    if (moon.position.z > distance) {
+      moon.position.z = distance
+      stars.position.z = distance
+      shouldMove = false
+      createText()
+    }
+  }
+  // controls.update()
   renderer.render(scene, camera)
 }
-
 animate()
