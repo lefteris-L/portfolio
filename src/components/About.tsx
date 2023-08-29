@@ -13,7 +13,7 @@ const About = () => (
     </div>
     <div>
       <p className="mb-4">
-        Back in 2021, I decided to try my hand at creating custom MQL5
+        Back in 2022, I decided to try my hand at creating custom MQL5
         trading algorithms and tumbled head first into the rabbit hole
         of coding and web development. Fast-forward to today, and
         I&apos;ve had the privilege of building software for a{" "}
