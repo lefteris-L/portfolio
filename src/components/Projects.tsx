@@ -28,9 +28,11 @@ const Projects = () => (
                   aria-label="AI Logo Generator"
                 >
                   <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
-                  <span>
+                  <span className='inline-block'>
                     AI Logo Generator App
-                    <ArrowDiagonal />
+                    <span>
+                      <ArrowDiagonal />
+                    </span>
                   </span>
                 </a>
               </h3>
@@ -81,9 +83,11 @@ const Projects = () => (
                   aria-label="AI Article Summarizer"
                 >
                   <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
-                  <span>
-                    AI Article Summarizer
-                    <ArrowDiagonal />
+                  <span className='inline-block'>
+                    AI Article Summarizer{" "}
+                    <span>
+                      <ArrowDiagonal />
+                    </span>
                   </span>
                 </a>
               </h3>
@@ -126,9 +130,11 @@ const Projects = () => (
                   aria-label="MyBike landing page markup"
                 >
                   <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"/>
-                  <span>
-                    MyBike Landing Page Markup
-                    <ArrowDiagonal />
+                  <span className='inline-block'>
+                    MyBike Landing Page Markup{" "}
+                    <span>
+                      <ArrowDiagonal />
+                    </span>
                   </span>
                 </a>
               </h3>

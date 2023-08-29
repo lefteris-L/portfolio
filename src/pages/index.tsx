@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>My Portfolio</title>
-        <meta name="description" content="My Portfolio" />
+        <title>Lefteris Loizides</title>
+        <meta name="description" content="Lefteris Loizides" />
         <link rel="icon" href="/logo-white.svg" />
       </Head>
       <div
