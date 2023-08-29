@@ -13,7 +13,7 @@ const Header = () => (
         Software Developer at Aylo
       </h2>
       <p className="mt-4 max-w-xs leading-normal">
-        I builds SaaS and digital experiences for the web.
+        I build SaaS and digital experiences for the web.
       </p>
       <nav className="nav hidden lg:block" aria-label="In-page jump links">
         <ul className="mt-16 w-max">
@@ -48,19 +48,19 @@ const Header = () => (
     <li className="mr-5 text-xs">
       <a className="block hover:text-slate-200" href="https://github.com/lefteris-l" target="_blank" rel="noreferrer">
         <span className="sr-only">GitHub</span>
-          <Gh />
+        <Gh />
       </a>
     </li>
     <li className="mr-5 text-xs">
       <a className="block hover:text-slate-200" href="https://instagram.com/lefteris.lz" target="_blank" rel="noreferrer">
         <span className="sr-only">Instagram</span>
-      <Ig />
-    </a>
+        <Ig />
+      </a>
     </li>
     <li className="mr-5 text-xs">
     <a className="block hover:text-slate-200" href="https://www.linkedin.com/in/lefterisl/" target="_blank" rel="noreferrer">
       <span className="sr-only">LinkedIn</span>
-        <Li />
+      <Li />
     </a>
     </li>
     </ul>
