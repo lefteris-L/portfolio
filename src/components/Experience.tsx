@@ -37,7 +37,7 @@ const Experience = () => (
                     <span>
                       Software Developer ·{" "}
                       <span className="inline-block">
-                        Aylo
+                        Aylo{" "}
                         <ArrowDiagonal />
                       </span>
                     </span>
@@ -92,7 +92,7 @@ const Experience = () => (
                     <span>
                       Full-Stack Web Developer ·{" "}
                       <span className="inline-block">
-                        Mate Academy (Bootcamp)
+                        Mate Academy {" "}
                         <ArrowDiagonal />
                       </span>
                     </span>
@@ -128,8 +128,9 @@ const Experience = () => (
         >
           <span>
             <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
-              View Full Résumé
+              View Full{" "}
             </span>
+            Résumé{" "}
             <ArrowRight />
           </span>
         </a>
