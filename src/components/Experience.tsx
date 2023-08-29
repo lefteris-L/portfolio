@@ -1,5 +1,5 @@
-import { ArrowDiagonal, ArrowRight } from 'public/arrow';
-import Skill from './Skill';
+import { ArrowDiagonal, ArrowRight } from "public/arrow";
+import Skill from "./Skill";
 
 const Experience = () => (
   <section
@@ -37,19 +37,17 @@ const Experience = () => (
                     <span>
                       Software Developer ·{" "}
                       <span className="inline-block">
-                        Aylo{" "}
-                        <ArrowDiagonal />
+                        Aylo <ArrowDiagonal />
                       </span>
                     </span>
                   </a>
                 </div>
               </h3>
               <p className="mt-2 text-sm leading-normal">
-                Deliver high-quality, robust production code for one
-                of the company&apos;s most visited sites
-                Mydirtyhobby.com. Migrate legacy code to newer ES
-                versions, provide solutions for bugs as well as
-                implementation of new features.
+                Deliver high-quality, robust production code for one of the
+                company&apos;s most visited sites Mydirtyhobby.com. Migrate
+                legacy code to newer ES versions, provide solutions for bugs as
+                well as implementation of new features.
               </p>
               <ul
                 className="mt-2 flex flex-wrap"
@@ -92,15 +90,17 @@ const Experience = () => (
                     <span>
                       Full-Stack Web Developer ·{" "}
                       <span className="inline-block">
-                        Mate Academy {" "}
-                        <ArrowDiagonal />
+                        Mate Academy <ArrowDiagonal />
                       </span>
                     </span>
                   </a>
                 </div>
               </h3>
               <p className="mt-2 text-sm leading-normal">
-                Studied everything from JavaScript/TypeScript fundamentals to state management with Redux and back-end applications with Node. Implemented HTML/SCSS markup and full-stack applications with React/Node/PostgreSQL.
+                Studied everything from JavaScript/TypeScript fundamentals to
+                state management with Redux and back-end applications with Node.
+                Implemented HTML/SCSS markup and full-stack applications with
+                React/Node/PostgreSQL.
               </p>
               <ul
                 className="mt-2 flex flex-wrap"
@@ -130,12 +130,16 @@ const Experience = () => (
             <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
               View Full{" "}
             </span>
-            Résumé{" "}
-            <ArrowRight />
+            <span className="whitespace-nowrap">
+              <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
+                Résumé
+              </span>
+              <ArrowRight />
+            </span>
           </span>
         </a>
       </div>
     </div>
   </section>
-)
-export default Experience
+);
+export default Experience;
