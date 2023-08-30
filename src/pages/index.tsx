@@ -14,6 +14,7 @@ export default function Home() {
       <Head>
         <title>Lefteris Loizides</title>
         <meta name="description" content="Lefteris Loizides" />
+        <meta name="robots" content="index,follow" />
         <link rel="icon" href="/logo-white.svg" />
       </Head>
       <div
