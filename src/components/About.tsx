@@ -26,7 +26,7 @@ const About = () => (
         My main focus these days is building SaaS web apps and working
         on projects at{" "}
         <CustomLink href="http://aylo.com">Aylo</CustomLink>. In my
-        free time I&apos;ve also build a shopify store.
+        free time I&apos;m also building a shopify store.
       </p>
       <p>
         When I&apos;m not coding, I&apos;m usually building my stock
