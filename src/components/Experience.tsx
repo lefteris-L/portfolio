@@ -134,7 +134,9 @@ const Experience = () => (
               <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
                 Résumé
               </span>
-              <ArrowRight />
+              <ArrowRight
+                className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"
+              />
             </span>
           </span>
         </a>
