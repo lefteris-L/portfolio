@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowDiagonal } from "public/arrow";
 import Skill from "./Skill";
 import Link from "next/link";
+import SVG from "./SVG";
 
 const Projects = () => (
   <section
@@ -33,19 +34,16 @@ const Projects = () => (
                     AI Logo Generator{" "}
                     <span>
                       App{" "}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
+                      <SVG
                         viewBox="0 0 20 20"
-                        fill="currentColor"
                         className="ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none"
-                        aria-hidden="true"
                       >
                         <path
                           fill-rule="evenodd"
                           d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
                           clip-rule="evenodd"
                         ></path>
-                      </svg>
+                      </SVG>
                     </span>
                   </span>
                 </Link>
@@ -58,10 +56,10 @@ const Projects = () => (
                 className="mt-2 flex flex-wrap"
                 aria-label="Technologies used:"
               >
-                <Skill>Next</Skill>
+                <Skill>Next.js</Skill>
                 <Skill>React</Skill>
                 <Skill>TypeScript</Skill>
-                <Skill>Tailwind</Skill>
+                <Skill>Tailwind CSS</Skill>
                 <Skill>Styled Components</Skill>
                 <Skill>PostgreSQL</Skill>
                 <Skill>Prisma ORM</Skill>
@@ -125,7 +123,7 @@ const Projects = () => (
                 <Skill>React</Skill>
                 <Skill>OpenAI API</Skill>
                 <Skill>Rapid API</Skill>
-                <Skill>Tailwind</Skill>
+                <Skill>Tailwind CSS</Skill>
               </ul>
             </div>
             <Link
@@ -179,6 +177,8 @@ const Projects = () => (
               >
                 <Skill>Responsive Web Design</Skill>
                 <Skill>BEM</Skill>
+                <Skill>HTML</Skill>
+                <Skill>SCSS</Skill>
               </ul>
             </div>
             <Link
