@@ -9,7 +9,7 @@ const Header = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if (entry.intersectionRatio > .1) setVisible(entry.target.id)
+        if (entry.intersectionRatio > .25) setVisible(entry.target.id)
       })
     }, {threshold: .8/* Array(10).fill(1).map((n, i) => +((n+i)/100)) */})
     document.querySelectorAll('section').forEach(el => observer.observe(el))
