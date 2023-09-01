@@ -23,7 +23,7 @@ const Projects = () => (
             <div className="z-10 sm:order-2 sm:col-span-6">
               <h3>
                 <Link
-                  className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200  hover:text-teal-300 focus-visible:text-teal-300"
+                  className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
                   href="https://logos.lefterisloizides.com"
                   target="_blank"
                   rel="noreferrer"
@@ -96,7 +96,7 @@ const Projects = () => (
             <div className="z-10 sm:order-2 sm:col-span-6">
               <h3>
                 <Link
-                  className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200  hover:text-teal-300 focus-visible:text-teal-300"
+                  className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
                   href="https://chat-gpt-api-l2r6.onrender.com/"
                   target="_blank"
                   rel="noreferrer"
