@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Head>
         <title>Lefteris Loizides</title>
-        <meta name="description" content="Lefteris Loizides WebDev Portfolio | Lefteris Loizides © 2023" />
+        <meta name="description" content="Lefteris Loizides (Λευτέρης Λοϊζίδης) is a software engineer who builds SaaS products and digital experiences for the web" />
         <link rel="icon" href="/logo-white.svg" />
       </Head>
       <div
