@@ -14,10 +14,10 @@ body {
 .navText {
   @apply text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200
 }
-.visible.navLine {
+.visible .navLine {
   @apply w-16 bg-slate-200
   
 }
-.visible.navText {
+.visible .navText {
   @apply text-slate-200
 }

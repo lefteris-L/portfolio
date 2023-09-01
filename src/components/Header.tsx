@@ -1,28 +1,37 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import socialLogos from "public/socialLogos";
 import SVG from "./SVG";
 
 const Header = () => {
-  const [visible, setVisible] = useState('about')
+  const [visible, setVisible] = useState("about");
 
   useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.intersectionRatio > .25) setVisible(entry.target.id)
-      })
-    }, {threshold: .8/* Array(10).fill(1).map((n, i) => +((n+i)/100)) */})
-    document.querySelectorAll('section').forEach(el => observer.observe(el))
-  }, [])
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(({ intersectionRect: { bottom, top }, target: { id } }) => {
+          if (id === "about") setVisible(bottom > 50 ? id : "experience")
+          if (id === "projects") !!top && setVisible(top > 400 ? "experience" : id)
+        });
+      },
+      { threshold: Array(10).fill(1).map((n: number, i) => (n + i) / 10) }
+    )
+
+    document.querySelectorAll("section").forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
-    const e = document.querySelector(`[href="#${visible}"]`)
-    const addClass = (el = e) => [0,1].forEach(i => el?.children?.item(i)?.classList.add('visible'))
-    const removeClass = (el = e) => [0,1].forEach(i => el?.children?.item(i)?.classList.remove('visible'))
+    const e = document.querySelector(`[href="#${visible}"]`);
+    const addClass = (el = e) => el?.classList.add("visible")
+    const removeClass = (el = e) => el?.classList.remove("visible")
 
-    document.querySelectorAll('a').forEach(el => visible !== el.id && removeClass(el))
-    addClass()
-  }, [visible])
+    document
+      .querySelectorAll("a")
+      .forEach((el) => visible !== el.id && removeClass(el));
+    addClass();
+  }, [visible]);
 
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
@@ -41,25 +50,19 @@ const Header = () => {
             <li>
               <a className="group flex items-center py-3" href="#about">
                 <span className="navLine" />
-                <span className="navText">
-                  About
-                </span>
+                <span className="navText">About</span>
               </a>
             </li>
             <li>
               <a className="group flex items-center py-3" href="#experience">
                 <span className="navLine" />
-                <span className="navText">
-                  Experience
-                </span>
+                <span className="navText">Experience</span>
               </a>
             </li>
             <li>
               <a className="group flex items-center py-3" href="#projects">
                 <span className="navLine" />
-                <span className="navText">
-                  Projects
-                </span>
+                <span className="navText">Projects</span>
               </a>
             </li>
           </ul>
