@@ -34,7 +34,7 @@ const Header = () => {
           Software Developer at Aylo
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
-          I build SaaS and digital experiences for the web.
+          I build SaaS products and digital experiences for the web.
         </p>
         <nav className="nav hidden lg:block" aria-label="In-page jump links">
           <ul className="mt-16 w-max">
