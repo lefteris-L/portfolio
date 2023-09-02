@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <title>Lefteris Loizides</title>
         <meta name="description" content="Lefteris Loizides (Λευτέρης Λοϊζίδης) is a software engineer who builds SaaS products and digital experiences for the web" />
-        <link rel="icon" href="/favicon.svg" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <div
         className={
