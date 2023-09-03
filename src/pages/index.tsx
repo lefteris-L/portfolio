@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <title>Lefteris Loizides</title>
         <meta name="description" content="Lefteris Loizides is a software engineer who builds SaaS products and digital experiences for the web" />
-        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://lefterisloizides.com" />
         <meta property="og:title" content="Lefteris Loizides" />
