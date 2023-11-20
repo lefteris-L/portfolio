@@ -23,13 +23,12 @@ const About = () => (
         .
       </p>
       <p className="mb-4">
-        My main focus these days is building SaaS web apps and working
+        My main focus these days is working
         on projects at{" "}
-        <CustomLink href="http://aylo.com">Aylo</CustomLink>. In my
-        free time I&apos;m also building a shopify store.
+        <CustomLink href="http://aylo.com">Aylo</CustomLink> and building SaaS web apps. I&apos;ve also built a shopify store that is no longer active and a telegram bot.
       </p>
       <p>
-        When I&apos;m not coding, I&apos;m usually building my stock
+        When I&apos;m not coding, I&apos;m usually cooking up something delish, building my stock
         portfolio, perfecting my techniques in MMA, or cruising down
         the street in my Golf Mk4.
       </p>
