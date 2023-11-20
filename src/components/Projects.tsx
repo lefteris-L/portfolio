@@ -91,8 +91,7 @@ const Projects = () => (
                   <span className="inline-block">
                     AI Logo Generator{" "}
                     <span>
-                      App{" "}
-                      <ArrowDiagonal />
+                      App <ArrowDiagonal />
                     </span>
                   </span>
                 </Link>
@@ -155,8 +154,7 @@ const Projects = () => (
                   <span className="inline-block">
                     AI Article{" "}
                     <span>
-                      Summarizer{" "}
-                      <ArrowDiagonal />
+                      Summarizer <ArrowDiagonal />
                     </span>
                   </span>
                 </Link>
@@ -212,8 +210,7 @@ const Projects = () => (
                   <span className="inline-block">
                     MyBike Landing Page{" "}
                     <span>
-                      Markup{" "}
-                      <ArrowDiagonal />
+                      Markup <ArrowDiagonal />
                     </span>
                   </span>
                 </Link>

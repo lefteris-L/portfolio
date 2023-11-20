@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import socialLogos from "public/socialLogos";
-import SVG from "./SVG";
 
 const Header = () => {
   const [visible, setVisible] = useState("about");
@@ -77,9 +76,15 @@ const Header = () => {
             rel="noreferrer"
           >
             <span className="sr-only">GitHub</span>
-            <SVG viewBox="0 0 16 16" className="h-6 w-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              aria-hidden="true"
+              viewBox="0 0 16 16"
+              className="h-6 w-6"
+            >
               {socialLogos.gh}
-            </SVG>
+            </svg>
           </a>
         </li>
         <li className="mr-5 text-xs">
@@ -90,9 +95,15 @@ const Header = () => {
             rel="noreferrer"
           >
             <span className="sr-only">Instagram</span>
-            <SVG viewBox="0 0 1000 1000" className="h-6 w-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              aria-hidden="true"
+              viewBox="0 0 1000 1000"
+              className="h-6 w-6"
+            >
               {socialLogos.ig}
-            </SVG>
+            </svg>
           </a>
         </li>
         <li className="mr-5 text-xs">
@@ -103,9 +114,15 @@ const Header = () => {
             rel="noreferrer"
           >
             <span className="sr-only">LinkedIn</span>
-            <SVG className="h-6 w-6" viewBox="0 0 24 24">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              aria-hidden="true"
+              className="h-6 w-6"
+              viewBox="0 0 24 24"
+            >
               {socialLogos.in}
-            </SVG>
+            </svg>
           </a>
         </li>
       </ul>
