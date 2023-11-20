@@ -1,10 +1,10 @@
-export const ArrowDiagonal = () => (
+export const ArrowDiagonal = (props: React.ComponentPropsWithoutRef<'svg'>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
     aria-hidden="true"
     viewBox="0 0 20 20"
-    className="ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none"
+    {...props}
   >
     <path
       fillRule="evenodd"

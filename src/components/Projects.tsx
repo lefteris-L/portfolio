@@ -30,10 +30,9 @@ const Projects = () => (
                 >
                   <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
                   <span className="inline-block">
-                    Temp Gmail Telegram{" "}
+                    Temp Gmail Telegram Bot{' '}
                     <span>
-                      Bot{" "}
-                      <ArrowDiagonal />
+                      <ArrowDiagonal className="arrowDiagonal" />
                     </span>
                   </span>
                 </Link>
@@ -89,9 +88,9 @@ const Projects = () => (
                 >
                   <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
                   <span className="inline-block">
-                    AI Logo Generator{" "}
+                    AI Logo Generator App{' '}
                     <span>
-                      App <ArrowDiagonal />
+                      <ArrowDiagonal className="arrowDiagonal" />
                     </span>
                   </span>
                 </Link>
@@ -154,7 +153,7 @@ const Projects = () => (
                   <span className="inline-block">
                     AI Article{" "}
                     <span>
-                      Summarizer <ArrowDiagonal />
+                      Summarizer <ArrowDiagonal className="arrowDiagonal" />
                     </span>
                   </span>
                 </Link>
@@ -210,7 +209,7 @@ const Projects = () => (
                   <span className="inline-block">
                     MyBike Landing Page{" "}
                     <span>
-                      Markup <ArrowDiagonal />
+                      Markup <ArrowDiagonal className="arrowDiagonal" />
                     </span>
                   </span>
                 </Link>
