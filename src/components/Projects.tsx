@@ -2,7 +2,6 @@ import Image from "next/image";
 import { ArrowDiagonal } from "public/arrow";
 import Skill from "./Skill";
 import Link from "next/link";
-import SVG from "./SVG";
 
 const Projects = () => (
   <section
@@ -31,8 +30,9 @@ const Projects = () => (
                 >
                   <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
                   <span className="inline-block">
-                    Temp Gmail Telegram Bot{" "}
+                    Temp Gmail Telegram{" "}
                     <span>
+                      Bot{" "}
                       <ArrowDiagonal />
                     </span>
                   </span>
@@ -89,8 +89,11 @@ const Projects = () => (
                 >
                   <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
                   <span className="inline-block">
-                    AI Logo Generator App{" "}
-                    <span><ArrowDiagonal /></span>
+                    AI Logo Generator{" "}
+                    <span>
+                      App{" "}
+                      <ArrowDiagonal />
+                    </span>
                   </span>
                 </Link>
               </h3>
@@ -150,8 +153,9 @@ const Projects = () => (
                 >
                   <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
                   <span className="inline-block">
-                    AI Article Summarizer{" "}
+                    AI Article{" "}
                     <span>
+                      Summarizer{" "}
                       <ArrowDiagonal />
                     </span>
                   </span>
@@ -206,8 +210,9 @@ const Projects = () => (
                 >
                   <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
                   <span className="inline-block">
-                    MyBike Landing Page Markup{" "}
+                    MyBike Landing Page{" "}
                     <span>
+                      Markup{" "}
                       <ArrowDiagonal />
                     </span>
                   </span>
