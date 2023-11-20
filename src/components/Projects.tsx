@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowDiagonal } from "public/arrow";
 import Skill from "./Skill";
 import Link from "next/link";
+import SVG from "./SVG";
 
 const Projects = () => (
   <section
@@ -67,7 +68,7 @@ const Projects = () => (
                 height="48"
                 decoding="async"
                 data-nimg="1"
-                className="projectImage"
+                className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                 style={{ color: "transparent" }}
                 src="/bot.png"
               />
@@ -128,7 +129,7 @@ const Projects = () => (
                 height="48"
                 decoding="async"
                 data-nimg="1"
-                className="projectImage"
+                className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                 style={{ color: "transparent" }}
                 src="/logos.png"
               />
@@ -184,7 +185,7 @@ const Projects = () => (
                 height="48"
                 decoding="async"
                 data-nimg="1"
-                className="projectImage"
+                className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                 style={{ color: "transparent" }}
                 src="/sumz.png"
               />
@@ -239,7 +240,7 @@ const Projects = () => (
                 height="48"
                 decoding="async"
                 data-nimg="1"
-                className="projectImage"
+                className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                 style={{ color: "transparent" }}
                 src="/mybike.png"
               />
