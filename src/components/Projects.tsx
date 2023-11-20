@@ -32,7 +32,7 @@ const Projects = () => (
                   <span className="inline-block">
                     Temp Gmail Telegram Bot{' '}
                     <span>
-                      <ArrowDiagonal className="arrowDiagonal" />
+                      <ArrowDiagonal className="ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
                     </span>
                   </span>
                 </Link>
@@ -90,7 +90,7 @@ const Projects = () => (
                   <span className="inline-block">
                     AI Logo Generator App{' '}
                     <span>
-                      <ArrowDiagonal className="arrowDiagonal" />
+                      <ArrowDiagonal className="ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
                     </span>
                   </span>
                 </Link>
@@ -153,7 +153,7 @@ const Projects = () => (
                   <span className="inline-block">
                     AI Article{" "}
                     <span>
-                      Summarizer <ArrowDiagonal className="arrowDiagonal" />
+                      Summarizer <ArrowDiagonal className="ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
                     </span>
                   </span>
                 </Link>
@@ -209,7 +209,7 @@ const Projects = () => (
                   <span className="inline-block">
                     MyBike Landing Page{" "}
                     <span>
-                      Markup <ArrowDiagonal className="arrowDiagonal" />
+                      Markup <ArrowDiagonal className="ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
                     </span>
                   </span>
                 </Link>
