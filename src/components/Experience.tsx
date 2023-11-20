@@ -37,7 +37,7 @@ const Experience = () => (
                     <span>
                       Software Developer ·{" "}
                       <span className="inline-block">
-                        Aylo <ArrowDiagonal />
+                        Aylo <ArrowDiagonal className='ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none' />
                       </span>
                     </span>
                   </a>
@@ -90,7 +90,7 @@ const Experience = () => (
                     <span>
                       Full-Stack Web Developer ·{" "}
                       <span className="inline-block">
-                        Mate Academy <ArrowDiagonal />
+                        Mate Academy <ArrowDiagonal className='ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none' />
                       </span>
                     </span>
                   </a>
