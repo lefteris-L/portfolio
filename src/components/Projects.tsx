@@ -17,12 +17,12 @@ const Projects = () => (
     <div>
       <ul className="group/list">
         <li className="mb-12">
-          <div className="project group">
+          <div className="group project">
             <div className="projectWrapper"></div>
             <div className="z-10 sm:order-2 sm:col-span-6">
               <h3>
                 <Link
-                  className="projectLink group/link"
+                  className="group/link projectLink"
                   href="https://t.me/tmpGmailBot"
                   target="_blank"
                   rel="noreferrer"
@@ -75,12 +75,12 @@ const Projects = () => (
           </div>
         </li>
         <li className="mb-12">
-          <div className="project group">
+          <div className="group project">
             <div className="projectWrapper"></div>
             <div className="z-10 sm:order-2 sm:col-span-6">
               <h3>
                 <Link
-                  className="projectLink group/link"
+                  className="group/link projectLink"
                   href="https://logos.lefterisloizides.com"
                   target="_blank"
                   rel="noreferrer"
@@ -136,12 +136,12 @@ const Projects = () => (
           </div>
         </li>
         <li className="mb-12">
-          <div className="project group">
+          <div className="group project">
             <div className="projectWrapper"></div>
             <div className="z-10 sm:order-2 sm:col-span-6">
               <h3>
                 <Link
-                  className="projectLink group/link"
+                  className="group/link projectLink"
                   href="https://chat-gpt-api-l2r6.onrender.com/"
                   target="_blank"
                   rel="noreferrer"
@@ -192,12 +192,12 @@ const Projects = () => (
           </div>
         </li>
         <li className="mb-12">
-          <div className="project group">
+          <div className="group project">
             <div className="projectWrapper" />
             <div className="z-10 sm:order-2 sm:col-span-6">
               <h3>
                 <Link
-                  className="projectLink group/link"
+                  className="group/link projectLink"
                   href="https://lefteris-l.github.io/layout_miami/"
                   target="_blank"
                   rel="noreferrer"
