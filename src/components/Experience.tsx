@@ -21,7 +21,7 @@ const Experience = () => (
           legacy code to newer ES versions, provide solutions for bugs as
           well as implementation of new features.'
           href='https://aylo.com'
-          period='Mar — Present'
+          period='Mar 2023 — Present'
           skills={['React', 'Material UI', 'JavaScript', 'PHP', 'Webpack', 'Node.js', 'Socket.io', 'Redux', 'GitLab', 'Jira']}
           title='Software Developer'
         />
