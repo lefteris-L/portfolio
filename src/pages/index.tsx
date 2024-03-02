@@ -26,6 +26,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://lefterisloizides.com" />
         <meta property="og:title" content="Lefteris Loizides" />
+        <meta property="og:site_name" content="Lefteris Loizides" />
         <meta property="og:description" content="Lefteris Loizides is a software engineer who builds SaaS products and digital experiences for the web" />
       </Head>
       <div
