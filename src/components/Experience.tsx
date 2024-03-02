@@ -21,7 +21,7 @@ const Experience = () => (
           legacy code to newer ES versions, provide solutions for bugs as
           well as implementation of new features.'
           href='https://aylo.com'
-          period='Mar 2023 — Present'
+          period='Mar — Present'
           skills={['React', 'Material UI', 'JavaScript', 'PHP', 'Webpack', 'Node.js', 'Socket.io', 'Redux', 'GitLab', 'Jira']}
           title='Software Developer'
         />
@@ -32,7 +32,7 @@ const Experience = () => (
           Implemented HTML/SCSS markup and full-stack applications with
           React/Node/PostgreSQL.'
           href='https://mate.academy/en-eu/learn?course=fullstack-en'
-          period='Oct 2022 — Mar'
+          period='Oct 2022 — Mar 2023'
           skills={['React', 'JavaScript', 'Node.js', 'Redux', 'TypeScript', 'HTML', 'CSS/SCSS', 'GitHub', 'PostgreSQL']}
           title='Full-Stack Web Developer'
         />
