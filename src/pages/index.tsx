@@ -5,6 +5,7 @@ import Experience from '~/components/Experience';
 import Footer from '~/components/Footer';
 import Header from "~/components/Header";
 import Projects from '~/components/Projects';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,6 +43,7 @@ export default function Home() {
             <Experience />
             <Projects />
             <Footer />
+            <SpeedInsights />
           </main>
         </div>
       </div>
