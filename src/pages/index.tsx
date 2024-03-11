@@ -13,8 +13,6 @@ export default function Home() {
   return (
     <>
       <Head>
-        <h1>Lefteris Loizides</h1>
-        <title>Lefteris Loizides</title>
         <meta name='title' content='Lefteris Loizides' />
         <meta name="description" content="Lefteris Loizides is a software engineer who builds SaaS products and digital experiences for the web" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
