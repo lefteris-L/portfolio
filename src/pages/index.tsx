@@ -14,8 +14,11 @@ export default function Home() {
     <>
       <Head>
         <title>Lefteris Loizides</title>
+        <div itemScope itemType="https://schema.org/WebSite">
+          <meta itemProp="url" content="https://lefterisloizides.com/"/>
+          <meta itemProp="name" content="Lefteris Loizides"/>
+        </div>
         <meta name='title' content='Lefteris Loizides' />
-        <meta name="site_name" content="Lefteris Loizides" />
         <meta name="description" content="Lefteris Loizides is a software engineer who builds SaaS products and digital experiences for the web" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
