@@ -6,17 +6,8 @@ import Footer from '~/components/Footer';
 import Header from "~/components/Header";
 import Projects from '~/components/Projects';
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import Script from 'next/script';
-import { type WithContext, type WebSite } from 'schema-dts'
 
 const inter = Inter({ subsets: ["latin"] });
-const jsonLd: WithContext<WebSite> = {
-  '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: 'Lefteris Loizides',
-  url: 'https://lefterisloizides.com/'
-};
-
 
 export default function Home() {
   return (
@@ -45,13 +36,6 @@ export default function Home() {
           inter.className
         }
       >
-        <Script
-          id="website-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLd),
-          }}
-        />
         <div className="min-h-screen lg:flex lg:justify-between lg:gap-4">
           <Header />
           <main className="pt-24 lg:w-1/2 lg:py-24">
