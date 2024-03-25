@@ -6,6 +6,7 @@ import Footer from '~/components/Footer';
 import Header from "~/components/Header";
 import Projects from '~/components/Projects';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import jsonLd from 'jsonLd';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,9 @@ export default function Home() {
         <meta property="og:title" content="Lefteris Loizides" />
         <meta property="og:site_name" content="Lefteris Loizides" />
         <meta property="og:description" content="Lefteris Loizides is a software engineer who builds SaaS products and digital experiences for the web" />
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
       </Head>
       <div
         className={
