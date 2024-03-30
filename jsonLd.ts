@@ -1,40 +1,15 @@
-import { type WithContext, type Person } from 'schema-dts'
+import { type WithContext, type WebSite } from 'schema-dts'
 
-const jsonLd:WithContext<Person> = {
+const jsonLd:WithContext<WebSite> = {
   '@context': 'https://schema.org',
-  '@type': 'Person',
+  '@type': 'WebSite',
   name: 'Lefteris Loizides',
-  jobTitle: 'Software Developer',
   url: 'https://lefterisloizides.com/',
+  alternateName: 'Lefteris\' Portfolio',
   sameAs: [
     'https://github.com/lefteris-l',
     'https://instagram.com/lefteris.lz',
     'https://www.linkedin.com/in/lefterisl/'
-  ],
-  worksFor: {
-    '@type': 'Organization',
-    name: 'Aylo'
-  },
-  email: 'loizides.lef@gmail.com',
-  birthDate: '1994-06-21',
-  birthPlace: {
-    '@type': 'Place',
-    address: 'Nicosia'
-  },
-  nationality: 'Cypriot',  
-  knowsLanguage: [
-    {
-      '@type': 'Language',
-      name: 'English'
-    },
-    {
-      '@type': 'Language',
-      name: 'Greek'
-    },
-    {
-      '@type': 'Language',
-      name: 'Spanish'
-    }
   ],
 }
 

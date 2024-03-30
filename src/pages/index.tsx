@@ -29,6 +29,10 @@ export default function Home() {
         <meta property="og:title" content="Lefteris Loizides" />
         <meta property="og:site_name" content="Lefteris Loizides" />
         <meta property="og:description" content="Lefteris Loizides is a software engineer who builds SaaS products and digital experiences for the web" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
+        />
       </Head>
       <div
         className={
@@ -36,10 +40,6 @@ export default function Home() {
           inter.className
         }
       >
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
-        />
         <div className="min-h-screen lg:flex lg:justify-between lg:gap-4">
           <Header />
           <main className="pt-24 lg:w-1/2 lg:py-24">
