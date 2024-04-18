@@ -35,9 +35,9 @@ const Header = () => {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
-        <h1 className="text-4xl font-extrabold tracking-tight text-slate-200 sm:text-5xl">
-          <Link href="/">Lefteris Loizides</Link>
-        </h1>
+        <Link href="/">
+          <h1 className="text-4xl font-extrabold tracking-tight text-slate-200 sm:text-5xl">Lefteris Loizides</h1>
+        </Link>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
           Software Developer at Aylo
         </h2>

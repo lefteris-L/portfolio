@@ -9,6 +9,6 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     <Component {...pageProps} />;
     <Script id='jsonld' dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}/>
   </>
-};
+}
 
 export default MyApp;
