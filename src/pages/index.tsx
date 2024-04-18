@@ -5,7 +5,6 @@ import Experience from '~/components/Experience';
 import Footer from '~/components/Footer';
 import Header from "~/components/Header";
 import Projects from '~/components/Projects';
-import jsonLd from 'jsonLd';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,10 +28,6 @@ export default function Home() {
         <meta property="og:title" content="Lefteris Loizides" />
         <meta property="og:site_name" content="Lefteris Loizides" />
         <meta property="og:description" content="Lefteris Loizides is a software engineer who builds SaaS products and digital experiences for the web" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
-        />
       </Head>
       <div
         className={
