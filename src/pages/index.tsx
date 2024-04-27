@@ -1,3 +1,4 @@
+import jsonLd from 'jsonLd';
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import About from '~/components/About';
@@ -28,6 +29,7 @@ export default function Home() {
         <meta property="og:title" content="Lefteris Loizides" />
         <meta property="og:site_name" content="Lefteris Loizides" />
         <meta property="og:description" content="Lefteris Loizides is a software engineer who builds SaaS products and digital experiences for the web" />
+        <script key='jsonld' dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}/>
       </Head>
       <div
         className={
