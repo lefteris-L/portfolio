@@ -1,2 +1,2 @@
 User-Agent: *
-Disallow: /resume.pdf
+Disallow: https://docs.google.com/document/d/1KeGL_xmTsqUmszgGVyrSdGCxHERHcVYYdMNYZ0LpyNQ/edit?usp=sharing
