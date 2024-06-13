@@ -9,8 +9,18 @@ const Header = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(({ intersectionRect: { bottom, top }, target: { id } }) => {
-          if (id === "about") setVisible(bottom > 50 ? id : "experience")
-          if (id === "projects") !!top && setVisible(top > 400 ? "experience" : id)
+          switch(id) {
+            case 'about':
+              setVisible(bottom >70 ? id : 'experience')
+            break
+            case 'projects':
+              console.log(bottom, top, window.innerHeight);
+              if (top < window.innerHeight * .7) setVisible('experience')
+              if (top < window.innerHeight * .4) setVisible(id)
+            break
+            default:
+              break
+          }
         });
       },
       { threshold: Array(10).fill(1).map((n: number, i) => (n + i) / 10) }
@@ -35,9 +45,9 @@ const Header = () => {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
-        <Link href="/">
-          <h1 className="text-4xl font-extrabold tracking-tight text-slate-200 sm:text-5xl">Lefteris Loizides</h1>
-        </Link>
+        <h1 className="text-4xl font-extrabold tracking-tight text-slate-200 sm:text-5xl">
+          <Link href="/">Lefteris Loizides</Link>
+        </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
           Software Developer at Aylo
         </h2>
