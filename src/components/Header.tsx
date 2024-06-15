@@ -14,7 +14,6 @@ const Header = () => {
               setVisible(bottom >70 ? id : 'experience')
             break
             case 'projects':
-              console.log(bottom, top, window.innerHeight);
               if (top < window.innerHeight * .7) setVisible('experience')
               if (top < window.innerHeight * .4) setVisible(id)
             break
