@@ -1,2 +1,3 @@
 User-Agent: *
 Disallow: https://docs.google.com/document/d/1KeGL_xmTsqUmszgGVyrSdGCxHERHcVYYdMNYZ0LpyNQ/edit?usp=sharing
+Disallow: https://logos.lefterisloizides.com/*
