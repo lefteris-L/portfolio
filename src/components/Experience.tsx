@@ -17,7 +17,7 @@ const Experience = () => (
         <Job
           company='Aylo'
           description='Deliver high-quality, robust production code for one of the
-          company&apos;s most visited sites Mydirtyhobby.com. Migrate
+          company&apos;s most visited sites. Migrate
           legacy code to newer ES versions, provide solutions for bugs as
           well as implementation of new features.'
           href='https://aylo.com'
