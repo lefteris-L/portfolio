@@ -23,7 +23,7 @@ const Project = (props: Props) => {
               className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
               href={href}
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer, noindex, nofollow"
               aria-label={name}
             >
               <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
