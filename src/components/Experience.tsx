@@ -41,7 +41,7 @@ const Experience = () => (
         <a
           className="group inline-flex items-center font-semibold leading-tight text-slate-200"
           aria-label="View Full Résumé"
-          href="https://docs.google.com/document/d/1KeGL_xmTsqUmszgGVyrSdGCxHERHcVYYdMNYZ0LpyNQ/edit?usp=sharing"
+          href="https://docs.google.com/document/d/16rUNxpIGyl08InxziIdFKmvl1ZJA9ttdkiIgblI7n3E/edit?usp=sharing"
           target='_blank'
         >
           <span>
