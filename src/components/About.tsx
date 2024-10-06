@@ -16,8 +16,7 @@ const About = () => (
         Back in 2022, I decided to try my hand at creating custom MQL5
         trading algorithms and tumbled head first into the rabbit hole
         of coding and web development. Fast-forward to today, and
-        I&apos;ve had the privilege of building software for a huge corporation.
-        I&apos;m also an <CustomLink href="https://www.isc2.org/">(ISC)2</CustomLink> member and hold the Certified in Cybersecurity (CC) certification.
+        I&apos;ve become a software developer, <CustomLink href="https://www.isc2.org/">(ISC)2</CustomLink> member and hold the Certified in Cybersecurity (CC) credential.
       </p>
       <p className="mb-4">
         My main focus these days is working

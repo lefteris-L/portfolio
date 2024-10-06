@@ -48,7 +48,7 @@ const Header = () => {
           <Link href="/">Lefteris Loizides</Link>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-          Software Developer at Aylo
+          Software Developer at Aylo<br/>
           (ISC)2 Member
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
