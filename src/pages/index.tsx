@@ -15,7 +15,7 @@ export default function Home() {
       <Head>
         <title>Lefteris Loizides</title>
         <meta name='title' content='Lefteris Loizides' />
-        <meta name="description" content="Lefteris Loizides is a software engineer and aspiring ethical hacker, who builds automation tools and digital experiences for the web." />
+        <meta name="description" content="Lefteris Loizides is a software engineer, (ISC)2 member, and aspiring ethical hacker, who builds automation tools and digital experiences for the web." />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -28,7 +28,7 @@ export default function Home() {
         <meta property="og:url" content="https://lefterisloizides.com" />
         <meta property="og:title" content="Lefteris Loizides" />
         <meta property="og:site_name" content="Lefteris Loizides" />
-        <meta property="og:description" content="Lefteris Loizides is a software engineer who builds SaaS products and digital experiences for the web" />
+        <meta property="og:description" content="Lefteris Loizides is a software engineer, (ISC)2 member, and aspiring ethical hacker, who builds automation tools and digital experiences for the web." />
         <script key='jsonld' dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}/>
       </Head>
       <div
