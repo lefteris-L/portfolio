@@ -1,5 +1,5 @@
 const Footer = () => (
-  <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
+  <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0 text-center">
     <p>
       Coded in{" "}
       <a
@@ -47,6 +47,7 @@ const Footer = () => (
         Inter
       </a>{" "}
       typeface.
+      © {new Date().getFullYear()}
     </p>
   </footer>
 );

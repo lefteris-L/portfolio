@@ -8,22 +8,29 @@ const Header = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach(({ intersectionRect: { bottom, top }, target: { id } }) => {
-          switch(id) {
-            case 'about':
-              setVisible(bottom >70 ? id : 'experience')
-            break
-            case 'projects':
-              if (top < window.innerHeight * .7) setVisible('experience')
-              if (top < window.innerHeight * .4) setVisible(id)
-            break
-            default:
-              break
-          }
-        });
+        entries.forEach(
+          ({ intersectionRect: { bottom, top }, target: { id } }) => {
+            switch (id) {
+              case "about":
+                setVisible(bottom > 70 ? id : "experience");
+                break;
+              case "projects":
+                if (top === 0) break;
+                if (top < window.innerHeight * 0.7) setVisible("experience");
+                if (top < window.innerHeight * 0.4) setVisible(id);
+                break;
+              default:
+                break;
+            }
+          },
+        );
       },
-      { threshold: Array(10).fill(1).map((n: number, i) => (n + i) / 10) }
-    )
+      {
+        threshold: Array(10)
+          .fill(1)
+          .map((n: number, i) => (n + i) / 10),
+      },
+    );
 
     document.querySelectorAll("section").forEach((el) => observer.observe(el));
 
@@ -32,8 +39,8 @@ const Header = () => {
 
   useEffect(() => {
     const e = document.querySelector(`[href="#${visible}"]`);
-    const addClass = (el = e) => el?.classList.add("visible")
-    const removeClass = (el = e) => el?.classList.remove("visible")
+    const addClass = (el = e) => el?.classList.add("visible");
+    const removeClass = (el = e) => el?.classList.remove("visible");
 
     document
       .querySelectorAll("a")
@@ -48,11 +55,13 @@ const Header = () => {
           <Link href="/">Lefteris Loizides</Link>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-          Software Developer at Aylo<br/>
+          Software Developer at Aylo
+          <br />
           (ISC)2 Member
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
-          I build digital experiences for the web and aspire to be an ethical hacker.
+          I build digital experiences for the web and aspire to be an ethical
+          hacker.
         </p>
         <nav className="nav hidden lg:block" aria-label="In-page jump links">
           <ul className="mt-16 w-max">
@@ -138,5 +147,5 @@ const Header = () => {
       </ul>
     </header>
   );
-}
+};
 export default Header;

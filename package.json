@@ -10,12 +10,13 @@
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.6.0",
-    "next": "^13.4.13",
+    "axios": "^1.8.1",
+    "next": "^15.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "schema-dts": "^1.1.2",
     "sharp": "^0.32.5",
-    "zod": "^3.21.4"
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@types/eslint": "^8.44.2",
@@ -27,7 +28,7 @@
     "autoprefixer": "^10.4.14",
     "eslint": "^8.47.0",
     "eslint-config-next": "^13.4.13",
-    "postcss": "^8.4.27",
+    "postcss": "^8.5.3",
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.5.1",
     "tailwindcss": "^3.3.3",
