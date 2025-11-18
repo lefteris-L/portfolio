@@ -14,6 +14,13 @@ const Projects = () => (
     <div>
       <ul className="group/list">
         <Project
+          href='https://flixmap.app'
+          name='FlixMap'
+          description='Netflix availability checker that helps users discover which countries have specific movies and TV shows available on Netflix, with trending searches powered by Redis cache.'
+          skills={['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Redis', 'Vercel']}
+          src='/flixmap.png'
+        />
+        <Project
           href='https://t.me/tmpGmailBot'
           name='Temp Gmail Telegram Bot'
           description='Telegram bot that lets the user generate temporary gmails (backend) to use in order to avoid spam, with a separate inbox webpage (frontend).'
@@ -36,13 +43,6 @@ const Projects = () => (
           models.'
           skills={['React', 'OpenAI API', 'Tailwind CSS']}
           src='/sumz.png'
-        />
-        <Project
-          href='https://lefteris-l.github.io/layout_miami/'
-          name='MyBike landing page markup'
-          description='A landing page for MyBike built with HTML and SCSS.'
-          skills={['Responsive Web Design', 'BEM', 'HTML', 'SCSS']}
-          src='/mybike.png'
         />
       </ul>
     </div>
