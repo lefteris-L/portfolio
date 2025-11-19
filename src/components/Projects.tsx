@@ -14,6 +14,13 @@ const Projects = () => (
     <div>
       <ul className="group/list">
         <Project
+          href='https://andromedastrology.com'
+          name='Andromeda Astrology'
+          description='Full-featured astrology web app for generating birth charts, synastry compatibility reports, transits, solar returns, and numerology readings with PDF export functionality.'
+          skills={['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Stripe', 'jsPDF']}
+          src='/andromeda.png'
+        />
+        <Project
           href='https://flixmap.app'
           name='FlixMap'
           description='Netflix availability checker that helps users discover which countries have specific movies and TV shows available on Netflix, with trending searches powered by Redis cache.'
